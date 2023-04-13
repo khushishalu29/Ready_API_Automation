@@ -173,8 +173,8 @@
             <con:sourceType>Response</con:sourceType>
             <con:sourceStep>TestStep_001_Students_Details_Post</con:sourceStep>
             <con:sourcePath>$['id']</con:sourcePath>
-            <con:targetType xsi:nil="true"/>
-            <con:targetStep xsi:nil="true"/>
+            <con:targetType>id</con:targetType>
+            <con:targetStep>TestStep_002_Students_Details_Get</con:targetStep>
             <con:targetPath/>
             <con:type>JSONPATH</con:type>
             <con:upgraded>true</con:upgraded>
@@ -203,19 +203,13 @@
             <con:endpoint>https://thetestingworldapi.com/</con:endpoint>
             <con:request/>
             <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7392691</con:originalUri>
-            <con:assertion type="Valid HTTP Status Codes" id="7befcb53-9c00-4c4c-b522-a3a44a52cea9" name="Valid HTTP Status Codes">
-              <con:settings/>
-              <con:configuration>
-                <codes/>
-              </con:configuration>
-            </con:assertion>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
-              <con:entry key="id" value="${CommonProperty#StudentID}"/>
+              <con:entry key="id" value="7453496"/>
             </con:parameters>
           </con:restRequest>
         </con:config>
@@ -284,41 +278,7 @@
       </con:testStep>
       <con:testStep type="assertionteststep" name="Validations" id="d7115289-bac2-4ca4-a6ac-c4e24bd20a46">
         <con:settings/>
-        <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:entry>
-            <con:id>9f79a80d-1bae-4505-8dbf-23a8fadccf39</con:id>
-            <con:isGroup>false</con:isGroup>
-            <con:sourceId>eda67f27-5fd7-4fcb-8735-f4e57be03a4b</con:sourceId>
-            <con:propertyName>Response</con:propertyName>
-            <con:assertion type="Response SLA Assertion" name="Response SLA" id="e1bb44e5-895a-4477-92a2-a66485c7b659">
-              <con:configuration>
-                <SLA>200</SLA>
-              </con:configuration>
-            </con:assertion>
-          </con:entry>
-          <con:entry>
-            <con:id>db44385c-abcd-4dff-8d5f-cb4f33ef777c</con:id>
-            <con:isGroup>false</con:isGroup>
-            <con:sourceId>337bf2ae-ed7d-413d-9823-3528373fe4a0</con:sourceId>
-            <con:propertyName>Response</con:propertyName>
-            <con:assertion type="Response SLA Assertion" name="Response_SLA_Fetch" id="4a6252d9-9b3c-4264-baad-72325b5f743f">
-              <con:configuration>
-                <SLA>200</SLA>
-              </con:configuration>
-            </con:assertion>
-          </con:entry>
-          <con:entry>
-            <con:id>731765f2-e157-41be-9acd-f7f6ec930256</con:id>
-            <con:isGroup>false</con:isGroup>
-            <con:sourceId>794c53a4-4d36-4c57-8d0f-0a6068dfb117</con:sourceId>
-            <con:propertyName>Response</con:propertyName>
-            <con:assertion type="Response SLA Assertion" name="Response_SLA_Update" id="835ed25e-7f81-40c5-acd9-e58031323fe4">
-              <con:configuration>
-                <SLA>200</SLA>
-              </con:configuration>
-            </con:assertion>
-          </con:entry>
-        </con:config>
+        <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></con:config>
       </con:testStep>
       <con:properties/>
       <con:reportParameters/>
@@ -587,7 +547,7 @@
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
-              <con:entry key="id" value="7453067"/>
+              <con:entry key="id" value="7453500"/>
             </con:parameters>
           </con:restRequest>
         </con:config>
@@ -601,7 +561,7 @@
             </con:settings>
             <con:encoding>UTF-8</con:encoding>
             <con:endpoint>https://thetestingworldapi.com/</con:endpoint>
-            <con:request>{"id":7453067,"first_name":"sample string 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"}</con:request>
+            <con:request>{"id":7453500,"first_name":"sample string 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"}</con:request>
             <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/id</con:originalUri>
             <con:credentials>
               <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
@@ -609,7 +569,7 @@
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
-              <con:entry key="id" value="7453067"/>
+              <con:entry key="id" value="7453500"/>
             </con:parameters>
           </con:restRequest>
         </con:config>
